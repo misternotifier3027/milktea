@@ -1,0 +1,43 @@
+{
+  "version": 3,
+  "middleware": {
+    "/": {
+      "files": [
+        "prerender-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/middleware.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/admin(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(.json)?[\\/#\\?]?$",
+          "originalSource": "/admin/:path*"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/api\\/product\\/createOrUpdate(.json)?[\\/#\\?]?$",
+          "originalSource": "/api/product/createOrUpdate"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/api\\/type-product\\/createOrUpdate(.json)?[\\/#\\?]?$",
+          "originalSource": "/api/type-product/createOrUpdate"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/api\\/topping\\/createOrUpdate(.json)?[\\/#\\?]?$",
+          "originalSource": "/api/topping/createOrUpdate"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "environments": {
+        "previewModeId": "883d7ea554d0313812e0fc32d0ce7d5a",
+        "previewModeSigningKey": "2c4b529897b78b3da9345c6f49ebb829b4972f6fabd9311bfb730537ec790c64",
+        "previewModeEncryptionKey": "46acfda44cebbe9b903fa079f2e3d10e031c2d68ae86e8c23534d55f3dbb534a"
+      }
+    }
+  },
+  "functions": {},
+  "sortedMiddleware": [
+    "/"
+  ]
+}

@@ -1,0 +1,1 @@
+{"version":1,"functions":{"/api/order/[id]":{},"/api/order/create":{},"/api/order/search":{},"/api/order/update":{},"/api/other-custom":{},"/api/product/[id]":{},"/api/product/createOrUpdate":{},"/api/store":{},"/api/topping/[id]":{},"/api/topping/createOrUpdate":{},"/api/type-product/[id]":{},"/api/type-product/createOrUpdate":{},"/_not-found":{}}}
